@@ -1,0 +1,35 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="identificador">Identificador:</label>
+      <input id="identificador" [(ngModel)]="contrato.identificador" name="identificador">
+    </div>
+    <div>
+      <label for="valor">Valor:</label>
+      <input id="valor" [(ngModel)]="contrato.valor" name="valor">
+    </div>
+    <div>
+      <label for="nombre_contratante">Nombre del Contratante:</label>
+      <input id="nombre_contratante" [(ngModel)]="contrato.nombre_contratante" name="nombre_contratante">
+    </div>
+    <div>
+      <label for="documento_contratante">Documento del Contratante:</label>
+      <input id="documento_contratante" [(ngModel)]="contrato.documento_contratante" name="documento_contratante">
+    </div>
+    <div>
+      <label for="nombre_contratista">Nombre del Contratista:</label>
+      <input id="nombre_contratista" [(ngModel)]="contrato.nombre_contratista" name="nombre_contratista">
+    </div>
+    <div>
+      <label for="documento_contratista">Documento del Contratista:</label>
+      <input id="documento_contratista" [(ngModel)]="contrato.documento_contratista" name="documento_contratista">
+    </div>
+    <div>
+      <label for="fecha_incial">Fecha Inicial:</label>
+      <input id="fecha_incial" [(ngModel)]="contrato.fecha_inicial" name="fecha_incial" type="date">
+    </div>
+    <div>
+      <label for="fecha_final">Fecha Final:</label>
+      <input id="fecha_final" [(ngModel)]="contrato.fecha_final" name="fecha_final" type="date">
+    </div>
+    <button type="submit">Insertar Contrato</button>
+  </form>

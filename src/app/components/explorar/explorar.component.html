@@ -1,0 +1,12 @@
+<h1>Info de los Contratos</h1>
+<div *ngFor="let contrato of contratos">
+  <h2>Componente: {{ contrato.contratoId }}</h2>
+  <p><strong>Identificador:</strong> {{ contrato.identificador }}</p>
+  <p><strong>Valor:</strong> {{ contrato.valor }}</p>
+  <p><strong>Nombre del contratante:</strong> {{ contrato.nombre_contratante }}</p>
+  <p><strong>Documento del contratante:</strong> {{ contrato.documento_contratante }}</p>
+  <p><strong>Nombre del contratista:</strong> {{ contrato.nombre_contratista }}</p>
+  <p><strong>Documento del contratista:</strong> {{ contrato.documento_contratista }}</p>
+  <p><strong>Fecha inicial:</strong> {{ contrato.fecha_inicial }}</p>
+  <p><strong>Fecha final:</strong> {{ contrato.fecha_final }}</p>
+</div>
